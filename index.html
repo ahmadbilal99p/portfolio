@@ -170,16 +170,7 @@
     <h2>Projects</h2>
     <p class="sub">Real work with screenshots and code on GitHub.</p>
     <div class="grid">
-      <div class="card">
-        <div class="term">
-  <span class="g">$</span> docker compose up -d<br>
-  <span class="g">✔</span> web started<br>
-    <span class="g">✔</span> db started
-    </div>
-        <h3>Dockerized web app</h3>
-        <p>Containerized app with Docker and docker-compose. Runs with one command.</p>
-        <a class="link" href="#" target="_blank">View on GitHub</a>
-      </div>
+      
       <div class="card">
         <div class="shot">Add screenshot here</div>
         <h3>CI/CD with GitHub Actions</h3>
@@ -187,10 +178,15 @@
         <a class="link" href="#" target="_blank">View on GitHub</a>
       </div>
       <div class="card">
-        <div class="shot">Add screenshot here</div>
-        <h3>Cloud deployment</h3>
-        <p>App deployed on a Linux server behind Nginx with HTTPS.</p>
-        <a class="link" href="#" target="_blank">View on GitHub</a>
+        <div class="term">
+          <span class="g">$</span> docker build -t my-portfolio .<br>
+          <span class="g">✔</span> Successfully built<br>
+          <span class="g">$</span> docker run -d -p 8080:80 my-portfolio<br>
+          <span class="g">✔</span> Pipeline passing
+        </div>
+        <h3>Dockerized portfolio with CI</h3>
+        <p>My portfolio served by nginx in Docker, tested automatically with GitHub Actions on every push.</p>
+        <a class="link" href="https://github.com/ahmadbilal99p/portfolio" target="_blank">View on GitHub</a>
       </div>
     </div>
   </section>
